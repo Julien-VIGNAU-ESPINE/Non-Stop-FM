@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <title>Lecteur de Musique</title>
+    <title>Non Stop Pop FM</title>
     <style>
         body {
             font-family: 'Consolas', 'monaco', monospace;
@@ -216,7 +216,7 @@
 </head>
 
 <body>
-    <h1>Non Stop Pop FM</h1>
+    <h1>Non Stop Pop FM <a href="/legal.html" style="font-size: 1vw; text-decoration: none; color: #FFF;">?</a></h1>
     <!-- <form id="downloadForm">
         <input type="text" id="youtubeUrl" placeholder="Entrez l'URL YouTube" required>
         <input type="text" id="author" placeholder="Auteur" required>
@@ -237,7 +237,7 @@
         <button id="loopButton"><i class="fas fa-redo"></i></button>
         <button id="shuffleButton"><i class="fa fa-random" aria-hidden="true"></i></button>
         <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
-        <div class="current-track-name" id="currentTrack">Aucune musique en cours</div>
+        <div class="current-track-name" id="currentTrack">No track</div>
         <div class="volume-container">
             <span class="volume-button" id="volumeDown"><i class="fa fa-volume-down"></i></span>
             <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.1" value="1">
@@ -248,9 +248,10 @@
         <div class="progress" id="progress"></div>
     </div>
     <audio id="audioPlayer">
-        Votre navigateur ne prend pas en charge l'élément audio.
+        Your browser does not support the audio element.
     </audio>
-    <div id="loadingMessage">Téléchargement en cours, veuillez patienter...</div>
+    <div id="loadingMessage">Download in progress, please wait...</div>
+    <!-- <div id="legal" style=" margin-bottom: 1%;">Made by {JV-E}. Non Stop Pop FM is a brand owned by Rockstar Games. This is not an official product.</div> -->
     <script>
         const audioPlayer = document.getElementById('audioPlayer');
         const trackItems = document.querySelectorAll('.track-list li');

@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
         });
     });
 });
-
+app.use(express.static(path.join(__dirname, 'public')));
 // Route pour télécharger une vidéo YouTube
 app.post('/download', (req, res) => {
     const { url, author, musicTitle } = req.body;
